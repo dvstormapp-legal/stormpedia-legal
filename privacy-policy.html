@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy – Stormpedia (DV Storm App)</title>
+
+  <!-- Aggiorna questo canonical in base al tuo dominio -->
+  <link rel="canonical" href="https://dvstormapp-legal.github.io/stormpedia-legal/privacy-policy.html" />
+
+  <style>
+    :root{
+      --brand:#00A8E8; --bg:#0B0E14; --card:#111826; --text:#E8F1F8; --muted:#A8C2D9; --accent:#58E1FF;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    header{background:var(--brand);color:#fff;padding:14px 18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+    header img{height:40px;width:auto;display:block}
+    nav a{color:#fff;text-decoration:none;margin-right:16px;font-weight:600;opacity:.95}
+    nav a[aria-current="page"]{text-decoration:underline}
+    .wrap{max-width:980px;margin:24px auto;padding:0 16px}
+    .lang-switch{display:flex;gap:8px;margin:8px 0 16px}
+    .lang-switch button{background:var(--card);color:var(--text);border:1px solid #2c3a4c;border-radius:8px;padding:8px 12px;cursor:pointer}
+    .lang-switch button.active{background:#1e2a3b;border-color:#415a77}
+    .card{background:var(--card);border:1px solid #1d2735;border-radius:14px;padding:18px;margin:14px 0}
+    h1{font-size:1.7rem;margin:.2rem 0 .6rem}
+    h2{font-size:1.25rem;margin:1.1rem 0 .4rem}
+    ul{padding-left:1.1rem}
+    footer{margin-top:40px;padding:18px;color:var(--muted);border-top:1px solid #1d2735;text-align:center}
+    a{color:var(--accent)}
+    .muted{color:var(--muted)}
+    .lang-it{display:block}
+    .lang-en{display:none}
+    .badge{display:inline-block;background:#13334a;border:1px solid #2d5e7a;color:#bfe9ff;padding:.15rem .45rem;border-radius:6px;font-size:.85rem}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="nuovologo.jpeg" alt="DV Storm App logo" />
+    <div style="flex:1 1 auto;min-width:240px">
+      <div style="font-weight:800;font-size:1.15rem;letter-spacing:.3px">Stormpedia – DV Storm App</div>
+      <div class="muted" style="font-size:.9rem">Informativa sulla privacy / Privacy Policy</div>
+    </div>
+    <nav>
+      <a href="privacy-policy.html" aria-current="page">Privacy Policy</a>
+      <a href="admob-info.html">Informativa AdMob</a>
+      <a href="supporto-contatti.html">Supporto & Contatti</a>
+    </nav>
+  </header>
+
+  <div class="wrap">
+    <div class="lang-switch">
+      <button id="btn-it" class="active">Italiano</button>
+      <button id="btn-en">English</button>
+    </div>
+
+    <!-- IT -->
+    <section class="lang-it">
+      <h1>Informativa sulla Privacy</h1>
+      <p class="muted">Ultimo aggiornamento: <span class="badge">26 dicembre 2025</span></p>
+
+      <div class="card">
+        <p><strong>Questa Informativa è fornita da DV Storm App, di proprietà di DV Storm Project.</strong><br>
+        Titolari del trattamento: <strong>Daniel Crecca</strong> e <strong>Vincenzo Di Serio</strong>, co-fondatori del progetto e responsabili dello sviluppo tecnico e dei contenuti.<br>
+        Sede: Maracalagonis (CA), Italia. Email: <a href="mailto:dvstormapp@gmail.com">dvstormapp@gmail.com</a>.<br>
+        Questa pagina spiega come trattiamo i dati personali quando utilizzi l’app <strong>Stormpedia</strong>.</p>
+      </div>
+
+      <h2>1. Quali dati trattiamo</h2>
+      <div class="card">
+        <ul>
+          <li><strong>AdMob (Google)</strong>: ...</li>
+          <li><strong>Suggerimenti anonimi (Firebase / Firestore)</strong>: ...</li>
+          <li><strong>Immagini e CDN (Cloudinary)</strong>: ...</li>
+          <li><strong>Cache locale delle immagini</strong>: ...</li>
+          <li><strong>Dati tecnici</strong>: ...</li>
+        </ul>
+      </div>
+
+      <!-- resto invariato -->
+    </section>
+
+    <!-- EN -->
+    <section class="lang-en">
+      <!-- versione inglese -->
+    </section>
+
+    <footer>
+      © 2025 DV Storm App — di proprietà di DV Storm Project • Maracalagonis (CA), Italia • 
+      <a href="mailto:dvstormapp@gmail.com">dvstormapp@gmail.com</a>
+    </footer>
+  </div>
+
+  <script>
+    const it=document.querySelector('.lang-it'), en=document.querySelector('.lang-en');
+    const bIt=document.getElementById('btn-it'), bEn=document.getElementById('btn-en');
+    bIt.onclick=()=>{it.style.display='block';en.style.display='none';bIt.classList.add('active');bEn.classList.remove('active');history.replaceState(null,'','#it');}
+    bEn.onclick=()=>{it.style.display='none';en.style.display='block';bEn.classList.add('active');bIt.classList.remove('active');history.replaceState(null,'','#en');}
+    if(location.hash==='#en') bEn.click();
+  </script>
+</body>
+</html>
