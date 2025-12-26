@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stormpedia – Pagine Legali | DV Storm App</title>
+  <link rel="icon" href="nuovologo.jpeg" type="image/jpeg" />
+  <style>
+    :root {
+      --brand: #00A8E8;
+      --bg: #0b0b10;
+      --text: #f0f0f0;
+      --muted: #a8a8a8;
+    }
+
+    body {
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #111826;
+      padding: 12px 20px;
+      border-bottom: 2px solid var(--brand);
+    }
+
+    header img {
+      height: 50px;
+      border-radius: 8px;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--brand);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 60px auto;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    h1 {
+      color: var(--brand);
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .menu a {
+      background-color: var(--brand);
+      color: #000;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .menu a:hover {
+      transform: scale(1.05);
+      background-color: #58e0ff;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 15px 10px;
+      background-color: #111826;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+      border-top: 1px solid #1f2636;
+    }
+
+    footer a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    .lang {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .lang span {
+      color: var(--brand);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+  
+    <img src="nuovologo.jpeg" alt="DV Storm App Logo" />
+    <nav>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="admob-info.html">Informativa AdMob</a>
+      <a href="supporto-contatti.html">Supporto & Contatti</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Stormpedia – Pagine Legali</h1>
+    <p>Repository ufficiale delle pagine informative e legali dell’app <strong>Stormpedia</strong>, parte del progetto <strong>DV Storm App</strong>.</p>
+
+    <div class="menu">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="admob-info.html">Informativa AdMob</a>
+      <a href="supporto-contatti.html">Supporto & Contatti</a>
+    </div>
+
+    <div class="lang">
+      🌐 <span>Lingua:</span> Italiano | <a href="#" onclick="toggleLanguage()">English</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 DV Storm App, di proprietà di DV Storm Project.  
+    📍 Maracalagonis (CA), Italia — 📧 <a href="mailto:dvstormapp@gmail.com">dvstormapp@gmail.com</a>
+  </footer>
+
+  <script>
+    function toggleLanguage() {
+      alert("La versione inglese sarà disponibile prossimamente. / English version coming soon.");
+    }
+  </script>
+</body>
+</html>
