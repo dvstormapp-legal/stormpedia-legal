@@ -1,2 +1,2 @@
 # stormpedia-legal
-Official legal &amp; policy pages for Stormpedia (DV Storm App)
+Official legal &amp; policy pages for Itta Tempu Faidi (DV Storm App)
