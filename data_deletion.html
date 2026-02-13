@@ -3,71 +3,241 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Richiesta eliminazione dati – Itta Tempu Faidi</title>
-<link rel="canonical" href="https://dvstormapp-legal.github.io/stormpedia-legal/data-deletion.html" />
+<title>Eliminazione Dati – Itta Tempu Faidi (DV Storm App)</title>
+
+<link rel="canonical" href="https://dvstormapp-legal.github.io/stormpedia-legal/data_deletion.html" />
 
 <style>
-body {
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    background:#0B0E14;
-    color:#E8F1F8;
-    padding:20px;
-    line-height:1.6;
+:root{
+  --brand:#00A8E8;
+  --bg:#0B0E14;
+  --card:#111826;
+  --text:#E8F1F8;
+  --muted:#A8C2D9;
+  --accent:#58E1FF;
 }
-h1 { color:#00A8E8; }
-a { color:#58E1FF; }
-.card {
-    background:#111826;
-    padding:16px;
-    border-radius:8px;
-    margin-top:16px;
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text)
+}
+header{
+  background:var(--brand);
+  color:#fff;
+  padding:14px 18px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  flex-wrap:wrap
+}
+header img{height:40px;border-radius:8px}
+nav a{
+  color:#fff;
+  text-decoration:none;
+  margin-right:16px;
+  font-weight:600;
+  opacity:.95
+}
+nav a[aria-current="page"]{text-decoration:underline}
+.wrap{max-width:980px;margin:24px auto;padding:0 16px}
+.lang-switch{display:flex;gap:8px;margin:8px 0 16px}
+.lang-switch button{
+  background:var(--card);
+  color:var(--text);
+  border:1px solid #2c3a4c;
+  border-radius:8px;
+  padding:8px 12px;
+  cursor:pointer
+}
+.lang-switch button.active{background:#1e2a3b;border-color:#415a77}
+.card{
+  background:var(--card);
+  border:1px solid #1d2735;
+  border-radius:14px;
+  padding:18px;
+  margin:14px 0
+}
+h1{font-size:1.7rem;margin:.2rem 0 .6rem}
+h2{font-size:1.25rem;margin:1.1rem 0 .4rem}
+ul{padding-left:1.1rem}
+a{color:var(--accent)}
+.muted{color:var(--muted)}
+footer{
+  margin-top:40px;
+  padding:18px;
+  color:var(--muted);
+  border-top:1px solid #1d2735;
+  text-align:center
+}
+.lang-it{display:block}
+.lang-en{display:none}
+.badge{
+  display:inline-block;
+  background:#13334a;
+  border:1px solid #2d5e7a;
+  color:#bfe9ff;
+  padding:.15rem .45rem;
+  border-radius:6px;
+  font-size:.85rem
 }
 </style>
 </head>
 
 <body>
 
-<h1>Richiesta eliminazione dati</h1>
+<header>
+  <img src="nuovologo.jpeg" alt="DV Storm App logo" />
+  <div style="flex:1 1 auto;min-width:240px">
+    <div style="font-weight:800;font-size:1.15rem">
+      Itta Tempu Faidi – DV Storm App
+    </div>
+    <div class="muted" style="font-size:.9rem">
+      Eliminazione Dati / Data Deletion
+    </div>
+  </div>
+  <nav>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="admob-info.html">Informativa AdMob</a>
+    <a href="data_deletion.html" aria-current="page">Eliminazione Dati</a>
+    <a href="supporto-contatti.html">Supporto & Contatti</a>
+  </nav>
+</header>
 
-<p>
-Questa pagina riguarda l'app <strong>Itta Tempu Faidi</strong> sviluppata da DV Storm App.
-</p>
+<div class="wrap">
 
-<div class="card">
-<h2>Come richiedere l'eliminazione dei dati</h2>
-<p>
-Per richiedere l’eliminazione dei dati eventualmente associati all’utilizzo dell’app,
-scrivere a:
-</p>
+  <div class="lang-switch">
+    <button id="btn-it" class="active">Italiano</button>
+    <button id="btn-en">English</button>
+  </div>
 
-<p>
-📩 <strong>dvstormapp@gmail.com</strong>
-</p>
+  <!-- ITALIANO -->
+  <section class="lang-it">
+    <h1>Richiesta eliminazione dati</h1>
+    <p class="muted">Ultimo aggiornamento: <span class="badge">13 febbraio 2026</span></p>
 
-<p>
-Oggetto consigliato: <em>Richiesta eliminazione dati – Itta Tempu Faidi</em>
-</p>
+    <div class="card">
+      <p>
+        Questa pagina riguarda l’app <strong>Itta Tempu Faidi</strong>,
+        sviluppata da DV Storm App.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Come richiedere l’eliminazione</h2>
+      <p>
+        Per richiedere l’eliminazione dei dati eventualmente associati
+        all’utilizzo dell’app, scrivere a:
+      </p>
+      <p>
+        📩 <strong><a href="mailto:dvstormapp@gmail.com">dvstormapp@gmail.com</a></strong>
+      </p>
+      <p>
+        Oggetto consigliato:
+        <em>Richiesta eliminazione dati – Itta Tempu Faidi</em>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Quali dati possono essere eliminati?</h2>
+      <ul>
+        <li>Suggerimenti anonimi inviati tramite l’app</li>
+        <li>Dati tecnici eventualmente conservati nei limiti consentiti dai fornitori (Google / Firebase)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Tempistiche</h2>
+      <p>
+        Le richieste vengono gestite entro 30 giorni.
+      </p>
+      <p>
+        Poiché l’app non richiede la creazione di account e non raccoglie
+        dati personali identificativi diretti, potrebbe non essere sempre
+        possibile associare una richiesta a un dato specifico.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- ENGLISH -->
+  <section class="lang-en">
+    <h1>Data Deletion Request</h1>
+    <p class="muted">Last updated: <span class="badge">13 February 2026</span></p>
+
+    <div class="card">
+      <p>
+        This page relates to the app <strong>Itta Tempu Faidi</strong>
+        developed by DV Storm App.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>How to request deletion</h2>
+      <p>
+        To request deletion of data possibly associated with app usage,
+        please email:
+      </p>
+      <p>
+        📩 <strong><a href="mailto:dvstormapp@gmail.com">dvstormapp@gmail.com</a></strong>
+      </p>
+      <p>
+        Suggested subject:
+        <em>Data deletion request – Itta Tempu Faidi</em>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>What data may be deleted?</h2>
+      <ul>
+        <li>Anonymous feedback messages</li>
+        <li>Technical data retained within provider limits (Google / Firebase)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Processing time</h2>
+      <p>
+        Requests are handled within 30 days.
+      </p>
+      <p>
+        Since the app does not require account creation and does not collect
+        directly identifiable personal data, it may not always be possible
+        to associate a request with a specific record.
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 DV Storm App — di proprietà di DV Storm Project •
+    Maracalagonis (CA), Italia •
+    <a href="mailto:dvstormapp@gmail.com">dvstormapp@gmail.com</a>
+  </footer>
+
 </div>
 
-<div class="card">
-<h2>Quali dati possono essere eliminati?</h2>
-<ul>
-<li>Suggerimenti anonimi inviati tramite l’app (se identificabili tramite contenuto fornito)</li>
-<li>Eventuali dati tecnici conservati nei limiti consentiti dai fornitori di servizi (Google / Firebase)</li>
-</ul>
-</div>
+<script>
+  const it=document.querySelector('.lang-it'),
+        en=document.querySelector('.lang-en');
+  const bIt=document.getElementById('btn-it'),
+        bEn=document.getElementById('btn-en');
 
-<div class="card">
-<h2>Tempistiche</h2>
-<p>
-Le richieste vengono gestite entro 30 giorni.
-</p>
-<p>
-Poiché l’app non richiede la creazione di account e non raccoglie dati personali
-identificativi diretti, in alcuni casi potrebbe non essere possibile associare
-una richiesta a un dato specifico.
-</p>
-</div>
+  bIt.onclick=()=>{
+    it.style.display='block';
+    en.style.display='none';
+    bIt.classList.add('active');
+    bEn.classList.remove('active');
+  }
+
+  bEn.onclick=()=>{
+    it.style.display='none';
+    en.style.display='block';
+    bEn.classList.add('active');
+    bIt.classList.remove('active');
+  }
+</script>
 
 </body>
 </html>
