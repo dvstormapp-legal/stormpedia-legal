@@ -85,6 +85,19 @@
           <li><strong>Suggerimenti anonimi</strong> — se utilizzi il modulo feedback, memorizziamo il testo inviato e un identificatore tecnico non riconducibile all’identità dell’utente.</li>
           <li><strong>Log tecnici</strong> — servizi esterni (es. Cloudinary) possono registrare IP, user-agent, data/ora per motivi tecnici e di sicurezza.</li>
           <li><strong>Dati anonimi aggregati</strong> — utilizzati per migliorare il servizio.</li>
+          <li>
+<strong>Segnalazioni meteo anonime (Mappa Live)</strong> —
+l’utente può inserire segnalazioni meteo locali. 
+In questo caso vengono trattati:
+<ul>
+<li>tipo di evento meteo segnalato</li>
+<li>località selezionata</li>
+<li>coordinate geografiche (latitudine e longitudine)</li>
+<li>data e ora della segnalazione</li>
+<li>identificativo anonimo del dispositivo (anonId)</li>
+</ul>
+Tali dati non consentono l’identificazione diretta dell’utente.
+</li>
         </ul>
       </div>
 
@@ -96,6 +109,7 @@
           <li>pubblicità;</li>
           <li>sicurezza e prevenzione abusi;</li>
           <li>miglioramento del servizio.</li>
+          <li>visualizzazione di segnalazioni meteo in tempo reale sulla mappa live;</li>
         </ul>
       </div>
 
@@ -105,6 +119,7 @@
           <li>I suggerimenti anonimi possono essere cancellati manualmente entro 30 giorni.</li>
           <li>I log tecnici seguono le policy dei fornitori (Google, Cloudinary).</li>
           <li>Non conserviamo database utenti o profili personali.</li>
+          <li>Le segnalazioni meteo della mappa live vengono eliminate automaticamente entro circa 90 minuti.</li>
         </ul>
       </div>
 
@@ -114,6 +129,7 @@
           <li>Google AdMob</li>
           <li>Google Firebase / Firestore / Messaging</li>
           <li>Cloudinary</li>
+          <li>Google Firebase Firestore (gestione segnalazioni meteo)</li>
         </ul>
         <p><strong>Non vendiamo dati personali.</strong></p>
       </div>
@@ -133,7 +149,7 @@
     <!-- ENGLISH -->
     <section class="lang-en">
       <h1>Privacy Policy</h1>
-      <p class="muted">Last updated: <span class="badge">13 February 2026</span></p>
+      <p class="muted">Last updated: <span class="badge">21 aprile 2026</span>
 
       <div class="card">
         <p>This policy applies to the app <strong>Itta Tempu Faidi</strong> (formerly Stormpedia).</p>
