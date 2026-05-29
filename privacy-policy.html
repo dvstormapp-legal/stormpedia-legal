@@ -24,13 +24,23 @@ ul{padding-left:1.1rem}
 footer{margin-top:40px;padding:18px;color:var(--muted);border-top:1px solid #1d2735;text-align:center}
 .badge{background:#13334a;border:1px solid #2d5e7a;padding:.2rem .5rem;border-radius:6px}
 .lang-en{display:none}
+button{
+  background:#13334a;
+  border:1px solid #2d5e7a;
+  color:#bfe9ff;
+  padding:.4rem .7rem;
+  border-radius:8px;
+  cursor:pointer;
+  margin-right:8px;
+}
+a{color:var(--accent)}
 </style>
 </head>
 
 <body>
 
 <header>
-  <img src="nuovologo.jpeg">
+  <img src="nuovologo.jpeg" alt="DV Storm App logo">
   <div>
     <strong>Itta Tempu Faidi – DV Storm App</strong><br>
     <span>Informativa sulla privacy / Privacy Policy</span>
@@ -46,75 +56,253 @@ footer{margin-top:40px;padding:18px;color:var(--muted);border-top:1px solid #1d2
 <section id="it">
 
 <h1>Informativa sulla Privacy</h1>
-<p>Ultimo aggiornamento: <span class="badge">21 aprile 2026</span></p>
+<p>Ultimo aggiornamento: <span class="badge">29 maggio 2026</span></p>
 
 <div class="card">
 <p>
-Titolari del trattamento: <strong>Daniel Crecca</strong> e <strong>Vincenzo Di Serio</strong><br>
-Email: dvstormapp@gmail.com
+La presente Informativa descrive il trattamento dei dati relativo all’utilizzo dell’app
+<strong>Itta Tempu Faidi</strong>, sviluppata da <strong>DV Storm App</strong>,
+progetto di <strong>Daniel Crecca</strong> e <strong>Vincenzo Di Serio</strong>.
+</p>
+
+<p>
+<strong>Titolari del trattamento:</strong> Daniel Crecca e Vincenzo Di Serio<br>
+<strong>Email:</strong> <a href="mailto:dvstormapp@gmail.com">dvstormapp@gmail.com</a>
+</p>
+
+<p>
+L’app non richiede la creazione di un account e non raccoglie direttamente dati personali
+identificativi come nome, cognome o email, salvo qualora l’utente scelga volontariamente
+di contattarci o di inserirli spontaneamente nel testo di un messaggio o feedback.
 </p>
 </div>
 
 <h2>1. Dati che trattiamo</h2>
 <div class="card">
 <ul>
-<li>Google AdMob (pubblicità)</li>
-<li>Firebase Cloud Messaging (notifiche)</li>
-<li>Suggerimenti anonimi</li>
-<li>Log tecnici</li>
-<li>Dati anonimi aggregati</li>
+<li>Google AdMob, per la visualizzazione di annunci pubblicitari;</li>
+<li>Firebase Cloud Messaging, per l’invio di notifiche push;</li>
+<li>Google Firebase Firestore, per alcune funzioni dell’app;</li>
+<li>Cloudinary, ove utilizzato per contenuti tecnici, immagini o contenuti multimediali;</li>
+<li>suggerimenti anonimi inviati volontariamente dagli utenti;</li>
+<li>feedback anonimi relativi a Chiara Meteo IA;</li>
+<li>log tecnici e dati diagnostici necessari a stabilità, sicurezza e funzionamento dell’app;</li>
+<li>dati anonimi o aggregati per migliorare il servizio.</li>
+</ul>
+</div>
 
-<li><strong>Segnalazioni meteo anonime (Mappa Live)</strong>:
+<h2>2. Chiara Meteo IA</h2>
+<div class="card">
+<p>
+L’app può includere una funzione denominata <strong>Chiara Meteo IA</strong>, un assistente
+meteo sperimentale che interpreta dati meteorologici reali e li trasforma in risposte
+semplici e naturali.
+</p>
+
+<p>
+Quando l’utente utilizza Chiara Meteo IA, possono essere trattati:
+</p>
+
 <ul>
-<li>evento meteo</li>
-<li>località</li>
-<li>coordinate geografiche</li>
-<li>data e ora</li>
-<li>anonId</li>
+<li>la località cercata o selezionata dall’utente;</li>
+<li>eventuale indicazione temporale della richiesta, ad esempio meteo attuale, domani o giorni successivi;</li>
+<li>la risposta generata da Chiara, ove necessario per funzioni tecniche o feedback volontari;</li>
+<li>dati tecnici anonimi o pseudonimizzati utili al funzionamento, alla sicurezza e al miglioramento della funzione.</li>
 </ul>
-Tali dati non consentono l’identificazione diretta dell’utente e vengono trattati esclusivamente in forma anonima o pseudonimizzata.
-</li>
-</ul>
+
+<p>
+La località cercata dall’utente serve esclusivamente per recuperare dati meteo relativi
+alla zona richiesta. La località cercata non coincide necessariamente con la posizione reale
+dell’utente e l’app non richiede necessariamente l’accesso alla posizione GPS per usare Chiara.
+</p>
+
+<p>
+Le risposte di Chiara sono generate automaticamente sulla base di dati meteorologici forniti
+da servizi esterni e/o da fonti integrate nell’app. Le risposte possono contenere errori,
+imprecisioni, ritardi o interpretazioni non perfette dei dati disponibili.
+</p>
 </div>
 
-<h2>2. Finalità</h2>
+<h2>3. API meteo esterne</h2>
+<div class="card">
+<p>
+Per fornire le informazioni meteorologiche, l’app e/o i servizi collegati possono interrogare
+API meteo esterne, tra cui <strong>WeatherAPI</strong> o servizi equivalenti.
+</p>
+
+<p>
+Le richieste verso tali servizi possono includere coordinate geografiche o il nome della
+località richiesta, necessari a ottenere i dati meteo. Non vengono inviati nome, cognome,
+email o account dell’utente, salvo eventuali dati inseriti volontariamente dall’utente in
+campi testuali.
+</p>
+
+<p>
+I servizi esterni trattano i dati secondo le rispettive informative privacy e condizioni d’uso.
+</p>
+</div>
+
+<h2>4. Suggerimenti e feedback anonimi</h2>
+<div class="card">
+<p>
+L’utente può inviare suggerimenti o feedback volontari tramite l’app, inclusi feedback
+specifici su Chiara Meteo IA.
+</p>
+
+<p>
+I feedback possono essere usati per migliorare la qualità delle risposte, correggere errori,
+capire se una località è stata riconosciuta correttamente, verificare problemi di lettura vocale
+o individuare comportamenti anomali.
+</p>
+
+<p>
+I feedback sono inviati senza account e non richiedono nome, cognome o email. Può essere generato
+o usato un identificativo anonimo o pseudonimo del dispositivo (<strong>anonId</strong>) per finalità tecniche,
+sicurezza, prevenzione di abusi, spam o invii ripetuti.
+</p>
+
+<p>
+Se l’utente inserisce volontariamente dati personali nel testo del feedback, tali dati saranno
+trattati esclusivamente per gestire la segnalazione ricevuta.
+</p>
+</div>
+
+<h2>5. Segnalazioni meteo anonime (Mappa Live)</h2>
+<div class="card">
+<p>
+L’app consente agli utenti di inserire segnalazioni meteo locali visibili sulla mappa live.
+In questo caso possono essere trattati:
+</p>
+
+<ul>
+<li>evento meteo segnalato;</li>
+<li>località selezionata;</li>
+<li>coordinate geografiche, se necessarie alla funzione;</li>
+<li>data e ora della segnalazione;</li>
+<li>identificativo anonimo o pseudonimo del dispositivo, anonId.</li>
+</ul>
+
+<p>
+Tali dati non consentono l’identificazione diretta dell’utente e vengono trattati esclusivamente
+in forma anonima o pseudonimizzata. Le segnalazioni sono temporanee e non sono verificate in tempo reale.
+</p>
+</div>
+
+<h2>6. Finalità del trattamento</h2>
 <div class="card">
 <ul>
-<li>funzionamento app</li>
-<li>notifiche</li>
-<li>pubblicità</li>
-<li>sicurezza</li>
-<li>miglioramento servizio</li>
-<li>mappa live</li>
+<li>fornire e migliorare le funzionalità dell’app;</li>
+<li>mostrare previsioni, dati meteo e contenuti informativi;</li>
+<li>gestire Chiara Meteo IA e generare risposte meteo automatiche;</li>
+<li>raccogliere feedback anonimi per migliorare Chiara e l’app;</li>
+<li>inviare notifiche informative;</li>
+<li>gestire pubblicità e misurarne l’efficacia;</li>
+<li>garantire sicurezza, stabilità e prevenzione di attività fraudolente o abusive;</li>
+<li>visualizzare segnalazioni meteo nella Mappa Live;</li>
+<li>analizzare dati anonimi o aggregati per migliorare il servizio.</li>
 </ul>
 </div>
 
-<h2>3. Conservazione</h2>
+<h2>7. Base giuridica</h2>
 <div class="card">
 <ul>
-<li>Segnalazioni meteo: ~90 minuti</li>
-<li>Suggerimenti: fino a 30 giorni</li>
-<li>Nessun database utenti</li>
+<li><strong>Consenso:</strong> per pubblicità personalizzata e, ove richiesto, per specifiche funzioni opzionali;</li>
+<li><strong>Legittimo interesse:</strong> miglioramento del servizio, sicurezza, prevenzione abusi, gestione tecnica dell’app;</li>
+<li><strong>Esecuzione del servizio richiesto:</strong> per fornire informazioni meteo, risposte di Chiara, notifiche e funzioni dell’app;</li>
+<li><strong>Obblighi legali:</strong> ove applicabili.</li>
 </ul>
 </div>
 
-<h2>4. Fornitori</h2>
+<h2>8. Conservazione dei dati</h2>
 <div class="card">
 <ul>
-<li>Google AdMob</li>
-<li>Google Firebase (Firestore, Messaging)</li>
-<li>Cloudinary</li>
+<li>Le segnalazioni meteo della Mappa Live vengono eliminate automaticamente entro circa 90 minuti.</li>
+<li>I suggerimenti anonimi e i feedback su Chiara possono essere cancellati periodicamente o manualmente entro circa 30 giorni, salvo necessità tecniche o di sicurezza.</li>
+<li>I log tecnici e diagnostici hanno una conservazione limitata secondo le policy dei fornitori utilizzati.</li>
+<li>Non manteniamo database utenti o profili personali.</li>
 </ul>
 </div>
 
-<h2>5. Diritti</h2>
+<h2>9. Fornitori e servizi terzi</h2>
 <div class="card">
-<p>Contattaci: dvstormapp@gmail.com</p>
+<p>
+I dati possono essere trattati da fornitori terzi che agiscono, a seconda dei casi, come responsabili
+o autonomi titolari del trattamento. Tra questi possono rientrare:
+</p>
+
+<ul>
+<li>Google AdMob;</li>
+<li>Google Firebase, inclusi Firestore e Firebase Cloud Messaging;</li>
+<li>Cloudinary;</li>
+<li>WeatherAPI o altri fornitori di dati meteorologici;</li>
+<li>eventuali servizi tecnici di hosting o infrastruttura necessari al funzionamento dell’app.</li>
+</ul>
+
+<p>
+<strong>Non vendiamo dati personali.</strong>
+</p>
 </div>
 
-<h2>6. Minori</h2>
+<h2>10. Trasferimenti extra UE</h2>
 <div class="card">
-<p>L’app non è destinata a minori di 13 anni.</p>
+<p>
+Alcuni fornitori, come Google o altri servizi tecnici, possono trattare dati al di fuori dello
+Spazio Economico Europeo. In tali casi vengono applicate clausole contrattuali standard o altri
+strumenti conformi alla normativa applicabile, ove previsti.
+</p>
+</div>
+
+<h2>11. Diritti dell’utente</h2>
+<div class="card">
+<p>
+L’utente può esercitare, ove applicabili, i diritti di accesso, rettifica, cancellazione,
+limitazione del trattamento, opposizione, portabilità e revoca del consenso.
+</p>
+
+<p>
+Per esercitare i diritti o richiedere informazioni:
+<a href="mailto:dvstormapp@gmail.com">dvstormapp@gmail.com</a>
+</p>
+</div>
+
+<h2>12. Gestione del consenso pubblicitario</h2>
+<div class="card">
+<p>
+L’utente può modificare le preferenze relative agli annunci dalla sezione interna dell’app
+dedicata al consenso pubblicitario, ove disponibile, oppure dalle impostazioni del proprio
+dispositivo.
+</p>
+</div>
+
+<h2>13. Minori</h2>
+<div class="card">
+<p>
+L’app non è specificamente destinata a minori di 13 anni. Non raccogliamo consapevolmente dati
+personali di minori. I minori devono utilizzare l’app sotto la supervisione di un adulto.
+</p>
+</div>
+
+<h2>14. Avvertenza sulle informazioni meteo</h2>
+<div class="card">
+<p>
+Le informazioni meteo fornite dall’app, incluse quelle generate da Chiara Meteo IA, hanno finalità
+informativa e divulgativa. Non costituiscono allerte ufficiali, servizio di protezione civile,
+servizio di emergenza o consulenza professionale.
+</p>
+
+<p>
+In caso di maltempo severo, rischio per persone o cose, allerte, emergenze o decisioni rilevanti
+per la sicurezza, l’utente deve fare riferimento esclusivamente ai canali ufficiali, alle autorità
+competenti e alla Protezione Civile.
+</p>
+</div>
+
+<h2>15. Contatti</h2>
+<div class="card">
+<p>
+Email:
+<a href="mailto:dvstormapp@gmail.com">dvstormapp@gmail.com</a>
+</p>
 </div>
 
 </section>
@@ -123,73 +311,248 @@ Tali dati non consentono l’identificazione diretta dell’utente e vengono tra
 <section id="en" class="lang-en">
 
 <h1>Privacy Policy</h1>
-<p>Last updated: <span class="badge">21 April 2026</span></p>
+<p>Last updated: <span class="badge">29 May 2026</span></p>
+
+<div class="card">
+<p>
+This Privacy Policy describes the processing of data related to the use of the
+<strong>Itta Tempu Faidi</strong> mobile app, developed by <strong>DV Storm App</strong>,
+a project by <strong>Daniel Crecca</strong> and <strong>Vincenzo Di Serio</strong>.
+</p>
+
+<p>
+<strong>Data controllers:</strong> Daniel Crecca and Vincenzo Di Serio<br>
+<strong>Email:</strong> <a href="mailto:dvstormapp@gmail.com">dvstormapp@gmail.com</a>
+</p>
+
+<p>
+The app does not require account creation and does not directly collect identifying personal data
+such as name, surname or email address, unless the user voluntarily contacts us or enters such data
+in a message or feedback field.
+</p>
+</div>
 
 <h2>1. Data processed</h2>
 <div class="card">
 <ul>
-<li>Google AdMob</li>
-<li>Firebase Messaging</li>
-<li>Anonymous feedback</li>
-<li>Technical logs</li>
+<li>Google AdMob, for advertising;</li>
+<li>Firebase Cloud Messaging, for push notifications;</li>
+<li>Google Firebase Firestore, for some app features;</li>
+<li>Cloudinary, where used for technical, image or multimedia content;</li>
+<li>anonymous suggestions voluntarily submitted by users;</li>
+<li>anonymous feedback related to Chiara Meteo IA;</li>
+<li>technical logs and diagnostic data necessary for app stability, security and functionality;</li>
+<li>anonymous or aggregated data to improve the service.</li>
+</ul>
+</div>
 
-<li><strong>Anonymous weather reports (Live Map)</strong>:
+<h2>2. Chiara Meteo IA</h2>
+<div class="card">
+<p>
+The app may include a feature called <strong>Chiara Meteo IA</strong>, an experimental weather assistant
+that interprets real weather data and turns it into simple, natural responses.
+</p>
+
+<p>
+When the user uses Chiara Meteo IA, the following data may be processed:
+</p>
+
 <ul>
-<li>weather event</li>
-<li>location</li>
-<li>coordinates</li>
-<li>timestamp</li>
-<li>anonId</li>
+<li>the location searched or selected by the user;</li>
+<li>the time range of the request, such as current weather, tomorrow or following days;</li>
+<li>the response generated by Chiara, where necessary for technical functions or voluntary feedback;</li>
+<li>anonymous or pseudonymized technical data useful for functionality, security and improvement.</li>
 </ul>
-These data do not allow direct identification of the user and are processed exclusively in anonymous or pseudonymized form.
-</li>
-</ul>
+
+<p>
+The searched location is used only to retrieve weather data for the requested area. The searched
+location does not necessarily correspond to the user’s actual location and the app does not
+necessarily require GPS access to use Chiara.
+</p>
+
+<p>
+Chiara’s responses are generated automatically based on weather data provided by external services
+and/or sources integrated into the app. Responses may contain errors, inaccuracies, delays or
+imperfect interpretations of the available data.
+</p>
 </div>
 
-<h2>2. Purpose</h2>
+<h2>3. External weather APIs</h2>
+<div class="card">
+<p>
+To provide weather information, the app and/or related services may query external weather APIs,
+including <strong>WeatherAPI</strong> or equivalent services.
+</p>
+
+<p>
+Requests to such services may include geographic coordinates or the name of the requested location,
+which are necessary to obtain weather data. We do not send the user’s name, surname, email or account
+data, unless such data is voluntarily entered by the user in text fields.
+</p>
+
+<p>
+External services process data according to their own privacy policies and terms of use.
+</p>
+</div>
+
+<h2>4. Anonymous suggestions and feedback</h2>
+<div class="card">
+<p>
+The user may voluntarily submit suggestions or feedback through the app, including specific feedback
+about Chiara Meteo IA.
+</p>
+
+<p>
+Feedback may be used to improve response quality, correct errors, understand whether a location was
+recognized correctly, check voice-reading issues or identify abnormal behavior.
+</p>
+
+<p>
+Feedback is submitted without an account and does not require name, surname or email address. An
+anonymous or pseudonymous device identifier (<strong>anonId</strong>) may be generated or used for technical,
+security, anti-abuse, anti-spam or repeated-submission prevention purposes.
+</p>
+
+<p>
+If the user voluntarily enters personal data in the feedback text, such data will be processed only
+to manage the received report.
+</p>
+</div>
+
+<h2>5. Anonymous weather reports (Live Map)</h2>
+<div class="card">
+<p>
+The app allows users to submit local weather reports visible on the live map. In this case, the
+following data may be processed:
+</p>
+
+<ul>
+<li>reported weather event;</li>
+<li>selected location;</li>
+<li>geographic coordinates, where necessary for the feature;</li>
+<li>date and time of the report;</li>
+<li>anonymous or pseudonymous device identifier, anonId.</li>
+</ul>
+
+<p>
+These data do not allow direct identification of the user and are processed only in anonymous or
+pseudonymized form. Reports are temporary and are not verified in real time.
+</p>
+</div>
+
+<h2>6. Purposes</h2>
 <div class="card">
 <ul>
-<li>app functionality</li>
-<li>notifications</li>
-<li>advertising</li>
-<li>security</li>
-<li>service improvement</li>
-<li>live map</li>
+<li>to provide and improve app features;</li>
+<li>to show forecasts, weather data and informational content;</li>
+<li>to operate Chiara Meteo IA and generate automatic weather responses;</li>
+<li>to collect anonymous feedback to improve Chiara and the app;</li>
+<li>to send informational notifications;</li>
+<li>to manage advertising and measure its performance;</li>
+<li>to ensure security, stability and prevent fraudulent or abusive activity;</li>
+<li>to display weather reports on the Live Map;</li>
+<li>to analyze anonymous or aggregated data to improve the service.</li>
 </ul>
 </div>
 
-<h2>3. Retention</h2>
-<div class="card">
-<p>Weather reports are automatically deleted after ~90 minutes.</p>
-</div>
-
-<h2>4. Third parties</h2>
+<h2>7. Legal basis</h2>
 <div class="card">
 <ul>
-<li>Google AdMob</li>
-<li>Google Firebase</li>
-<li>Cloudinary</li>
+<li><strong>Consent:</strong> for personalized advertising and, where required, for specific optional features;</li>
+<li><strong>Legitimate interest:</strong> service improvement, security, abuse prevention and technical app management;</li>
+<li><strong>Performance of the requested service:</strong> to provide weather information, Chiara responses, notifications and app features;</li>
+<li><strong>Legal obligations:</strong> where applicable.</li>
 </ul>
 </div>
 
-<h2>5. User rights</h2>
+<h2>8. Retention</h2>
 <div class="card">
-<p>Contact: dvstormapp@gmail.com</p>
-</div>
-
-<h2>6. Children</h2>
-<div class="card">
-<p>Not intended for children under 13.</p>
-</div>
-
-<h2>7. User weather reports</h2>
-<div class="card">
-<p>Reports are user-generated and not verified in real time.</p>
 <ul>
-<li>User responsible for accuracy</li>
-<li>No false reports allowed</li>
-<li>Abuse may be limited</li>
+<li>Live Map weather reports are automatically deleted within approximately 90 minutes.</li>
+<li>Anonymous suggestions and Chiara feedback may be deleted periodically or manually within approximately 30 days, unless needed for technical or security reasons.</li>
+<li>Technical and diagnostic logs have limited retention according to the policies of the providers used.</li>
+<li>We do not maintain user databases or personal profiles.</li>
 </ul>
+</div>
+
+<h2>9. Third-party providers</h2>
+<div class="card">
+<p>
+Data may be processed by third-party providers acting, depending on the case, as processors or
+independent controllers. These may include:
+</p>
+
+<ul>
+<li>Google AdMob;</li>
+<li>Google Firebase, including Firestore and Firebase Cloud Messaging;</li>
+<li>Cloudinary;</li>
+<li>WeatherAPI or other weather data providers;</li>
+<li>technical hosting or infrastructure services necessary for app operation.</li>
+</ul>
+
+<p>
+<strong>We do not sell personal data.</strong>
+</p>
+</div>
+
+<h2>10. Transfers outside the EU</h2>
+<div class="card">
+<p>
+Some providers, such as Google or other technical services, may process data outside the European
+Economic Area. In such cases, standard contractual clauses or other instruments compliant with
+applicable law are applied where required.
+</p>
+</div>
+
+<h2>11. User rights</h2>
+<div class="card">
+<p>
+Where applicable, users may exercise their rights of access, rectification, erasure, restriction,
+objection, portability and withdrawal of consent.
+</p>
+
+<p>
+To exercise rights or request information:
+<a href="mailto:dvstormapp@gmail.com">dvstormapp@gmail.com</a>
+</p>
+</div>
+
+<h2>12. Advertising consent management</h2>
+<div class="card">
+<p>
+Users can modify their ad preferences through the internal app section dedicated to advertising
+consent, where available, or through their device settings.
+</p>
+</div>
+
+<h2>13. Children</h2>
+<div class="card">
+<p>
+The app is not specifically intended for children under 13. We do not knowingly collect personal
+data from children. Minors should use the app under adult supervision.
+</p>
+</div>
+
+<h2>14. Weather information notice</h2>
+<div class="card">
+<p>
+Weather information provided by the app, including information generated by Chiara Meteo IA, is for
+informational and educational purposes only. It does not constitute official alerts, civil protection
+service, emergency service or professional advice.
+</p>
+
+<p>
+In case of severe weather, risk to people or property, alerts, emergencies or safety-related decisions,
+users must refer exclusively to official channels, competent authorities and civil protection services.
+</p>
+</div>
+
+<h2>15. Contact</h2>
+<div class="card">
+<p>
+Email:
+<a href="mailto:dvstormapp@gmail.com">dvstormapp@gmail.com</a>
+</p>
 </div>
 
 </section>
